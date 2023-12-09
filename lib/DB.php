@@ -53,13 +53,15 @@ class DB
         }
     }
 
-    public function insertMenuRecord(string $pageName, string $url): bool
+    public function insertMenuRecord(string $Category, string $Price, string $Address, string $Bedrooms, string $Bathrooms, string $Area, string $Floor, string $Parking, string $Image): bool
     {
         $sql = "INSERT INTO zoznam(Category, Price, Address, Bedrooms, Bathrooms, Area, Floor, Parking, Image) VALUES ('" . $Category . "', '" . $Price . "', '" . $Address . 
-        "','" . $Bedrooms . "','" . $Bathrooms . "','" . $Area . "','" . $Floor . "','" . $Parking . "','" . $Image . "', )";
+        "','" . $Bedrooms . "','" . $Bathrooms . "','" . $Area . "','" . $Floor . "','" . $Parking . "','" . $Image . "')";
         $stmt = $this->connection->prepare($sql);
         return $stmt->execute();
     }
+
+
 
     public function getMenuItems(): array
     {
@@ -100,18 +102,57 @@ class DB
         return $stmt->execute();
     }
 
-    public function updateMenuItem(int $id, string $pageName = "", string $url = ""): bool
+    public function updateMenuItem(string $Category = "", string $Price = "", string $Address = "", string $Bedrooms = "", 
+    string $Bathrooms = "", string $Area = "", string $Floor = "", string $Parking = "", string $Image = "", int $id): bool
     {
+
+     
         $sql = "UPDATE zoznam SET ";
-
-        if(!empty($pageName)) {
-            $sql .= " page_name = '" . $pageName . "'";
+         
+       
+        if(!empty($Category)) {
+            $sql .= " Category = '" . $Category . "'";
         }
 
-        if(!empty($url)) {
-            $sql .= ", url = '" . $url . "'";
+        if(!empty($Price)) {
+            $sql .= ", Price = '" . $Price . "'";
+            
         }
 
+        if(!empty($Address)) {
+            $sql .= ", Address = '" . $Address . "'";
+            
+        }
+
+        if(!empty($Bedrooms)) {
+            $sql .= ", Bedrooms = '" . $Bedrooms . "'";
+            
+        }
+
+        if(!empty($Bathrooms)) {
+            $sql .= ", Bathrooms = '" . $Bathrooms . "'";
+            
+        }
+
+        if(!empty($Area)) {
+            $sql .= ", Area = '" . $Area . "'";
+            
+        }
+
+        if(!empty($Floor)) {
+            $sql .= ", Floor = '" . $Floor . "'";
+            
+        }
+
+        if(!empty($Parking)) {
+            $sql .= ", Parking = '" . $Parking . "'";
+            
+        }
+
+        if(!empty($Image)) {
+            $sql .= ", Image = '" . $Image . "'";
+        }
+        
         $sql .= " WHERE id = ". $id;
 
         $stmt = $this->connection->prepare($sql);

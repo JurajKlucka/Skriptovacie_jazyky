@@ -71,17 +71,18 @@ https://templatemo.com/tm-591-villa-agency
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
+                    <a href="index.php" class="logo">
                         <h1>Villa</h1>
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="properties.html">Properties</a></li>
-                      <li><a href="property-details.html" class="active">Property Details</a></li>
-                      <li><a href="contact.html">Contact Us</a></li>
-                      <li><a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a></li>
+                      <li><a href="index.php">Home</a></li>
+                      <li><a href="properties.php">Properties</a></li>
+                      <li><a href="property-details.php" class="active">Property Details</a></li>
+                      <li><a href="contact.php">Contact Us</a></li>
+                      <li><a href="insert.php">Create</a></li>
+                      <li><a href="#"><i class="fa fa-calendar"></i> Read </a></li>
                   </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -98,7 +99,7 @@ https://templatemo.com/tm-591-villa-agency
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <span class="breadcrumb"><a href="#">Home</a>  /  Single Property</span>
+          <span class="breadcrumb"><a href="#">Home</a>  /  Read</span>
           <h3>Single Property</h3>
         </div>
       </div>
@@ -230,7 +231,7 @@ https://templatemo.com/tm-591-villa-agency
                       <h4>All Info About Apartment</h4>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse. <br><br>Swag fanny pack lyft blog twee. JOMO ethical copper mug, succulents typewriter shaman DIY kitsch twee taiyaki fixie hella venmo after messenger poutine next level humblebrag swag franzen.</p>
                       <div class="icon-button">
-                        <a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a>
+                        <a href="#"><i class="fa fa-calendar"></i> Read </a>
                       </div>
                     </div>
                   </div>
@@ -255,7 +256,7 @@ https://templatemo.com/tm-591-villa-agency
                       <h4>Detail Info About New Villa</h4>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse. <br><br>Swag fanny pack lyft blog twee. JOMO ethical copper mug, succulents typewriter shaman DIY kitsch twee taiyaki fixie hella venmo after messenger poutine next level humblebrag swag franzen.</p>
                       <div class="icon-button">
-                        <a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a>
+                        <a href="#"><i class="fa fa-calendar"></i> Read </a>
                       </div>
                     </div>
                   </div>
@@ -280,7 +281,7 @@ https://templatemo.com/tm-591-villa-agency
                       <h4>Extra Info About Penthouse</h4>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut Kinfolk tonx seitan crucifix 3 wolf moon bicycle rights keffiyeh snackwave wolf same vice, chillwave vexillologistlabore et dolore magna aliqua quised ipsum suspendisse. <br><br>Swag fanny pack lyft blog twee. JOMO ethical copper mug, succulents typewriter shaman DIY kitsch twee taiyaki fixie hella venmo after messenger poutine next level humblebrag swag franzen.</p>
                       <div class="icon-button">
-                        <a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a>
+                        <a href="#"><i class="fa fa-calendar"></i> Read </a>
                       </div>
                     </div>
                   </div>

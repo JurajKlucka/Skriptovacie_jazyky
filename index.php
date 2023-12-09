@@ -71,17 +71,24 @@ https://templatemo.com/tm-591-villa-agency
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
+                    <a href="index.php" class="logo">
                         <h1>Villa</h1>
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                      <li><a href="index.html" class="active">Home</a></li>
-                      <li><a href="properties.html">Properties</a></li>
-                      <li><a href="property-details.html">Property Details</a></li>
-                      <li><a href="contact.html">Contact Us</a></li>
-                      <li><a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a></li>
+                      <li><a href="index.php" class="active">Home</a></li>
+                      <li><a href="properties.php">Properties</a></li>
+                      <li><a href="property-details.php">Property Details</a></li>
+                      <li><a href="contact.php">Contact Us</a></li>
+                      <li><a href="#"><i class="fa fa-calendar"></i> Portal </a></li>
+                <div class="main-button">
+                  <a href="admin/insert.php">Create</a>
+                  <!-- <a href="admin/delete.php">Delete</a> -->
+                  <!-- <a href="admin/menu.php">Operate</a> --> <!-- delete / update / insert -->
+                  <!--<a href="admin/update.php">Update</a>-->
+                  
+                </div>
                   </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -123,7 +130,7 @@ https://templatemo.com/tm-591-villa-agency
         <div class="col-lg-4">
           <div class="left-image">
             <img src="assets/images/featured.jpg" alt="">
-            <a href="property-details.html"><img src="assets/images/featured-icon.png" alt="" style="max-width: 60px; padding: 0px;"></a>
+            <a href="property-details.php"><img src="assets/images/featured-icon.png" alt="" style="max-width: 60px; padding: 0px;"></a>
           </div>
         </div>
         <div class="col-lg-5">
@@ -299,7 +306,7 @@ https://templatemo.com/tm-591-villa-agency
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse. 
                       <br><br>When you need free CSS templates, you can simply type TemplateMo in any search engine website. In addition, you can type TemplateMo Portfolio, TemplateMo One Page Layouts, etc.</p>
                       <div class="icon-button">
-                        <a href="property-details.html"><i class="fa fa-calendar"></i> Schedule a visit</a>
+                        <a href="property-details.php"><i class="fa fa-calendar"></i> Read </a>
                       </div>
                     </div>
                   </div>
@@ -324,7 +331,7 @@ https://templatemo.com/tm-591-villa-agency
                       <h4>Detail Info About Villa</h4>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse. <br><br>Swag fanny pack lyft blog twee. JOMO ethical copper mug, succulents typewriter shaman DIY kitsch twee taiyaki fixie hella venmo after messenger poutine next level humblebrag swag franzen.</p>
                       <div class="icon-button">
-                        <a href="property-details.html"><i class="fa fa-calendar"></i> Schedule a visit</a>
+                        <a href="property-details.php"><i class="fa fa-calendar"></i> Read </a>
                       </div>
                     </div>
                   </div>
@@ -349,7 +356,7 @@ https://templatemo.com/tm-591-villa-agency
                       <h4>Extra Info About Penthouse</h4>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse. <br><br>Swag fanny pack lyft blog twee. JOMO ethical copper mug, succulents typewriter shaman DIY kitsch twee taiyaki fixie hella venmo after messenger poutine next level humblebrag swag franzen.</p>
                       <div class="icon-button">
-                        <a href="property-details.html"><i class="fa fa-calendar"></i> Schedule a visit</a>
+                        <a href="property-details.php"><i class="fa fa-calendar"></i> Read </a>
                       </div>
                     </div>
                   </div>
@@ -387,19 +394,25 @@ https://templatemo.com/tm-591-villa-agency
 
             <div class="col-lg-4 col-md-6">
               <div class="item">
-                <a href="property-details.html"><img src="<?php echo $zoznamData["Image"]; ?>" alt=""></a>
+                <a href="property-details.php"><img src="<?php echo $zoznamData["Image"]; ?>" alt=""></a>
                 <span class="category"> <?php echo $zoznamData["Category"]; ?></span>
-                <h6>$2.264.000</h6>
-                <h4><a href="property-details.html"><?php echo $zoznamData["Address"]; ?></a></h4>
+               <!-- <h6>$2.264.000</h6> -->
+                <h4><a href="property-details.php"><?php echo $zoznamData["Address"]; ?></a></h4>
                 <ul>
+                  <li>Price: <span> <?php echo $zoznamData["Price"]; ?></span></li>
                   <li>Bedrooms: <span> <?php echo $zoznamData["Bedrooms"]; ?></span></li>
                   <li>Bathrooms: <span> <?php echo $zoznamData["Bathrooms"]; ?></span></li>
                   <li>Area: <span><?php echo $zoznamData["Area"]; ?></span></li>
                   <li>Floor: <span><?php echo $zoznamData["Floor"]; ?></span></li>
                   <li>Parking: <span><?php echo $zoznamData["Parking"]; ?></span></li>
+                  <!-- <li>id: <span><?php echo $zoznamData["id"]; ?></span></li> -->
                 </ul>
                 <div class="main-button">
-                  <a href="property-details.html">Schedule a visit</a>
+                  <a href="property-details.php">Read</a>
+                  <a href="admin/delete.php">Edit</a> <!-- a nasledne Delete al. Update -->
+                  <!-- <a href="admin/update.php">Update</a> -->
+                  
+                  
                 </div>
               </div>
             </div>
@@ -409,6 +422,7 @@ https://templatemo.com/tm-591-villa-agency
 
 
         ?>          
+
 
 
         

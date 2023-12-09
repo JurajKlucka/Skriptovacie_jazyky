@@ -1,0 +1,1 @@
+<a href="../index.php">Home </a> <a href="insert.php">Create</a> <a href="logout.php">Logout</a>

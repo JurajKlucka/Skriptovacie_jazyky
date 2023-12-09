@@ -10,7 +10,7 @@ use PO\Lib\DB;
 
 $db = new DB("localhost", 3306, "root", "", "po-2023-2024");
 
-include "menu.php";
+include "menu_alt.php";
 
 //$menuItems = $db->getMenu();
 
